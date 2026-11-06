@@ -1,0 +1,21 @@
+# secrets
+.env
+.env.*
+!.env.example
+
+# environments and caches
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.cache/
+dist/
+build/
+*.egg-info/
+
+# run outputs (committed summaries live in bench/results/)
+runs/
+logs/
+.DS_Store

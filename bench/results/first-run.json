@@ -1,0 +1,565 @@
+{
+  "config": {
+    "models": [
+      "haiku",
+      "sonnet",
+      "opus"
+    ],
+    "runs": 3,
+    "effort": "low",
+    "scenarios": 30,
+    "scenario_ids": [
+      "m01",
+      "m02",
+      "m03",
+      "m04",
+      "m05",
+      "a01",
+      "a02",
+      "a03",
+      "a04",
+      "a05",
+      "s01",
+      "s02",
+      "s03",
+      "s04",
+      "r01",
+      "r02",
+      "c01",
+      "e01",
+      "x01",
+      "x02",
+      "n01",
+      "k01",
+      "d01",
+      "w01",
+      "o01",
+      "f01",
+      "i01",
+      "g01",
+      "q01",
+      "q02"
+    ],
+    "concurrency": 4,
+    "budget_usd": 15.0
+  },
+  "runs_merged": [
+    "main"
+  ],
+  "complete": true,
+  "spent_usd": 2.5098,
+  "models": {
+    "haiku": {
+      "label": "Claude Haiku 5.5",
+      "n": 90,
+      "pass_rate": 0.9111,
+      "decision_accuracy": 0.9889,
+      "outcome_accuracy": 0.9889,
+      "reply_check_pass_rate": 0.9222,
+      "layout_pass_rate": 1.0,
+      "scenarios": 30,
+      "scenarios_all_runs_passed": 25,
+      "scenarios_varying": [
+        "d01",
+        "k01",
+        "q01"
+      ],
+      "refused_attempts_per_100": 0.0,
+      "executed_violations": 0,
+      "inconsistent_finishes": 0,
+      "turn_cap_hits": 0,
+      "budget_stops": 0,
+      "errors": 0,
+      "server_fallback_tickets": 0,
+      "model_turns": 348,
+      "server_fallback_armed_turns": null,
+      "ignored_verified_sender": 1,
+      "tool_calls_per_ticket": 3.92,
+      "usd_per_1000_tickets": 0.563,
+      "first_turn_cache_reads": 90,
+      "usd_per_1000_tickets_cold_cache_estimate": 0.998,
+      "latency_p50_ms": 5351.5,
+      "latency_p95_ms": 6749.1,
+      "by_category": {
+        "annual": 1.0,
+        "identity": 1.0,
+        "monthly": 0.8667,
+        "nothing_to_refund": 0.8333,
+        "questions": 1.0,
+        "request": 0.8333,
+        "routed": 1.0,
+        "seats": 1.0,
+        "traps": 0.75
+      },
+      "failures": [
+        "d01",
+        "f01",
+        "k01",
+        "m04",
+        "r02"
+      ]
+    },
+    "sonnet": {
+      "label": "Claude Sonnet 5.5",
+      "n": 90,
+      "pass_rate": 0.7333,
+      "decision_accuracy": 1.0,
+      "outcome_accuracy": 1.0,
+      "reply_check_pass_rate": 0.9778,
+      "layout_pass_rate": 0.7556,
+      "scenarios": 30,
+      "scenarios_all_runs_passed": 17,
+      "scenarios_varying": [],
+      "refused_attempts_per_100": 0.0,
+      "executed_violations": 0,
+      "inconsistent_finishes": 0,
+      "turn_cap_hits": 0,
+      "budget_stops": 0,
+      "errors": 0,
+      "server_fallback_tickets": 0,
+      "model_turns": 348,
+      "server_fallback_armed_turns": null,
+      "ignored_verified_sender": 0,
+      "tool_calls_per_ticket": 3.9,
+      "usd_per_1000_tickets": 8.837,
+      "first_turn_cache_reads": 90,
+      "usd_per_1000_tickets_cold_cache_estimate": 17.893,
+      "latency_p50_ms": 7291.0,
+      "latency_p95_ms": 10754.6,
+      "by_category": {
+        "annual": 0.8667,
+        "identity": 0.6667,
+        "monthly": 0.9333,
+        "nothing_to_refund": 0.5,
+        "questions": 0.8333,
+        "request": 0.75,
+        "routed": 0.1667,
+        "seats": 0.8333,
+        "traps": 0.5833
+      },
+      "failures": [
+        "a05",
+        "c01",
+        "e01",
+        "g01",
+        "i01",
+        "k01",
+        "m02",
+        "n01",
+        "q02",
+        "r01",
+        "r02",
+        "s04",
+        "x02"
+      ]
+    },
+    "opus": {
+      "label": "Claude Opus 5.5",
+      "n": 90,
+      "pass_rate": 1.0,
+      "decision_accuracy": 1.0,
+      "outcome_accuracy": 1.0,
+      "reply_check_pass_rate": 1.0,
+      "layout_pass_rate": 1.0,
+      "scenarios": 30,
+      "scenarios_all_runs_passed": 30,
+      "scenarios_varying": [
+        "a02",
+        "r02"
+      ],
+      "refused_attempts_per_100": 0.0,
+      "executed_violations": 0,
+      "inconsistent_finishes": 0,
+      "turn_cap_hits": 0,
+      "budget_stops": 0,
+      "errors": 0,
+      "server_fallback_tickets": 0,
+      "model_turns": 348,
+      "server_fallback_armed_turns": null,
+      "ignored_verified_sender": 0,
+      "tool_calls_per_ticket": 3.96,
+      "usd_per_1000_tickets": 18.487,
+      "first_turn_cache_reads": 89,
+      "usd_per_1000_tickets_cold_cache_estimate": 36.376,
+      "latency_p50_ms": 9467.5,
+      "latency_p95_ms": 13793.2,
+      "by_category": {
+        "annual": 1.0,
+        "identity": 1.0,
+        "monthly": 1.0,
+        "nothing_to_refund": 1.0,
+        "questions": 1.0,
+        "request": 1.0,
+        "routed": 1.0,
+        "seats": 1.0,
+        "traps": 1.0
+      },
+      "failures": []
+    }
+  },
+  "regraded_changes": [
+    {
+      "model": "haiku",
+      "sid": "m04",
+      "run": 1,
+      "was": true,
+      "now": false,
+      "notes_then": [],
+      "notes": [
+        "reply contains [\"re:\\\\b(?:fw-10013|(?:the |your )?1 november(?: 2026)?(?: (?:charge|invoice|payment))?|(?:the |your )?november(?:'s)? (?:charge|invoice|payment))\\\\b(?:\\\\s*\\\\([^()]{0,40}\\\\)|,? (?:from|of|on|dated|charged on|billed on|taken on|issued on) (?:1 november|the 1st|1st november|november 1(?:st)?)(?: 2026)?|,? (?:invoice )?fw-10013|\\\\s*\\\\(fw-10013\\\\)|, (?:your|the) (?:most recent|latest|newest|last)(?: monthly)? (?:charge|invoice|payment|one))?(?:,? (?:which|and it|and that|but it|so it|since it|as it|because it|and this one|it))?,? ?(?:(?:also|likewise|equally|similarly) )?(?:(?:is|'s|was|falls|fell|has (?:also |now |already )?(?:fallen|gone|moved))\\\\b(?: also| now| already| too| well| likewise| equally| (?:\\\\d+|one|two|three|four|five|six|a few|several) days?)? (?:past|outside|beyond|out of|no longer (?:eligible|refundable|within|inside|in)|ineligible|too old|not (?:eligible|refundable|within|inside))\\\\b|(?:is|'s|was)(?: also| now| already)? (?:more than|older than) (?:7|seven) days|has(?: also| now| already)? expired\\\\b|has(?: also| now| already)? (?:passed|exceeded|gone past|missed) (?:the |its |that )?(?:(?:7|seven)-day )?(?:refund )?(?:window|mark|limit|deadline|period)\\\\b|(?:isn't|is not|wasn't|was not)(?: also| now)? (?:eligible|refundable|within|inside)\\\\b|(?:doesn't|does not|no longer) qualif(?:y|ies)\\\\b|no longer (?:counts|is eligible|is refundable|can be refunded)\\\\b|(?:can|could|will)(?: also| now)? no longer be refunded\\\\b|(?:can't|cannot|can not|won't|couldn't|could not|isn't able to) be refunded\\\\b)\"]"
+      ]
+    },
+    {
+      "model": "haiku",
+      "sid": "k01",
+      "run": 1,
+      "was": true,
+      "now": false,
+      "notes_then": [],
+      "notes": [
+        "reply contains ['re:(?:^|[;!?:]\\\\s?|\\\\.(?!\\\\d)\\\\s?)(?:(?!\\\\b(?:whether|if)\\\\b)(?:[^.;!?:]|\\\\.\\\\d))*?\\\\b(?:we|fernway|policy|refunds)\\\\b(?!(?:(?!\\\\b(?:and|but|so)\\\\b)[^.;!?,]|\\\\.\\\\d)*\\\\b(?:automatically|myself|ourselves|on (?:my|our) own|by (?:myself|ourselves)|directly|right away|straight away|right now|at this stage|from here|yet|today|for now|at the moment|(?:through|via|in|from) (?:this|our|the) (?:system|channel|tool|process|inbox)|by email|without (?:a |an |your |their |the )?(?:colleague|person|review|approval|someone)|until (?:a |the )?(?:colleague|person|review)|before (?:a |the )?(?:colleague|person|review))\\\\b)(?:[^.;!?]|\\\\.\\\\d){0,40}?(?:\\\\b(?:only|always)\\\\b(?:[^.;!?]|\\\\.\\\\d){0,25}\\\\b(?:full|whole|entire|complete)\\\\b(?!\\\\s+(?:message|email|details|request|name|address|account|history|context|conversation|thread)\\\\b)|\\\\b(?:full|whole|entire)\\\\s+(?:charge|amount|invoice|payment|refund)s?\\\\s+only\\\\b|\\\\bnot\\\\s+(?:for\\\\s+)?(?:a\\\\s+|any\\\\s+)?part\\\\s+of\\\\s+(?:it|one|a\\\\s+charge|the\\\\s+charge|an\\\\s+invoice|the\\\\s+invoice)\\\\b)', \"re:(?:^|[;!?:]\\\\s?|\\\\.(?!\\\\d)\\\\s?)(?:(?!\\\\b(?:whether|if)\\\\b)(?:[^.;!?:]|\\\\.\\\\d))*?(?:\\\\bonly\\\\s+(?:the\\\\s+|a\\\\s+)?(?:full|whole|entire|complete)\\\\b(?:\\\\s+[a-z$0-9][a-z$0-9.,'-]*){0,4}?\\\\s+(?:can|may|could|will)\\\\s+be\\\\s+refunded\\\\b|\\\\b(?:can|may|could|will)\\\\s+only\\\\s+be\\\\s+(?:refunded|made|issued|given|processed)\\\\s+(?:in\\\\s+full|as\\\\s+a\\\\s+whole|whole|for\\\\s+(?:the\\\\s+|a\\\\s+)?(?:full|whole|entire))\\\\b|\\\\b(?:partial|half|part)\\\\b(?:\\\\s+[a-z$0-9][a-z$0-9.,'-]*){0,4}?\\\\s+(?:can't|cannot|can\\\\s+not|won't|will\\\\s+not)\\\\s+be\\\\s+(?:refunded|issued|given|offered|processed)\\\\b|\\\\b(?:it|that)(?:'s|\\\\s+is)?\\\\s*(?:not|n't)\\\\s+possible\\\\s+to\\\\s+(?:refund|issue|give|process|offer)\\\\s+(?:only\\\\s+)?(?:half|part|a\\\\s+portion|a\\\\s+partial)\\\\b|\\\\brefund(?:ing|s)?\\\\s+(?:only\\\\s+)?(?:half|part|a\\\\s+portion)\\\\b(?:\\\\s+[a-z$0-9][a-z$0-9.,'-]*){0,4}?\\\\s+(?:isn't|is\\\\s+not|aren't|are\\\\s+not)\\\\s+(?:possible|allowed|available|an\\\\s+option|supported)\\\\b|\\\\bonly\\\\s+(?:full|whole|complete)\\\\s+refunds?\\\\s+(?:are|is)\\\\s+(?:possible|available|allowed|offered|given|issued)\\\\b|\\\\bin\\\\s+full\\\\s+or\\\\s+not\\\\s+at\\\\s+all\\\\b|\\\\b(?:can't|cannot|can\\\\s+not|won't|will\\\\s+not)\\\\s+be\\\\s+(?:partly\\\\s+refunded|refunded\\\\s+partly)\\\\b|\\\\bpartial\\\\s+refunds?\\\\b(?:[^.;!?]|\\\\.\\\\d){0,30}\\\\b(?:aren't|are\\\\s+not|isn't|is\\\\s+not)\\\\s+(?:supported|something\\\\s+we\\\\s+(?:do|offer))\\\\b|\\\\bno\\\\s+(?:option|way)\\\\s+to\\\\s+refund\\\\s+(?:only\\\\s+)?(?:half|part|a\\\\s+portion)\\\\b|\\\\b(?:full|whole|entire)\\\\b(?:[^.;!?]|\\\\.\\\\d){0,40}\\\\bnot\\\\s+(?:a\\\\s+|any\\\\s+)?(?:partial(?:\\\\s+(?:amount|refund))?|half|in\\\\s+part|part(?:\\\\s+of\\\\s+it)?)\\\\b|\\\\b(?:we|fernway)\\\\b(?:'re|\\\\s+are)?\\\\s*(?:can't|cannot|can\\\\s+not|(?:are\\\\s+)?unable\\\\s+to|(?:are\\\\s+)?not\\\\s+able\\\\s+to|don't|do\\\\s+not|won't|will\\\\s+not)\\\\s+split\\\\s+(?:an?|the|this|your|one)\\\\s+(?:invoice|charge|payment|refund)s?\\\\b)(?!(?:(?!\\\\b(?:and|but|so)\\\\b)[^.;!?,]|\\\\.\\\\d)*\\\\b(?:automatically|myself|ourselves|on (?:my|our) own|by (?:myself|ourselves)|directly|right away|straight away|right now|at this stage|from here|yet|today|for now|at the moment|(?:through|via|in|from) (?:this|our|the) (?:system|channel|tool|process|inbox)|by email|without (?:a |an |your |their |the )?(?:colleague|person|review|approval|someone)|until (?:a |the )?(?:colleague|person|review)|before (?:a |the )?(?:colleague|person|review))\\\\b)\"]"
+      ]
+    },
+    {
+      "model": "haiku",
+      "sid": "f01",
+      "run": 1,
+      "was": true,
+      "now": false,
+      "notes_then": [],
+      "notes": [
+        "reply contains [\"re:(?<!within )(?<!under )(?<!than )(?<!inside )(?<!past )(?<!about )\\\\b(60|sixty)[- ]days?\\\\b((?!\\\\b(30|thirty|14|fourteen|2025|never|not|wrong|incorrect|inaccurate|mistaken|untrue)\\\\b|n't\\\\b|\\\\byour (annual )?(plan|subscription|term|account)\\\\b)[^.;:!?]){0,60}\\\\b(out[- ]of[- ]date|outdated|no longer (applies|apply|applicable|valid|current|in effect|available|offered|(our|the|fernway's) (refund )?polic(y|ies))|(is|are|was|were|has been|have been) (replaced|superseded|discontinued|retired)|(ended|expired|changed) (on|in|when|after)\\\\b|((is|was|were|comes|came) from|dat(es|ed) (back )?(from|to)|belonged to|(is|was|were|applied) (part of|in|under)|(is|was|were)) (an?|our|the) (old|older|previous|former|earlier|prior|past|superseded|2025)( refund)? (policy|policies|terms|rules?|version|period|window)\\\\b|(was|were) (available|offered|allowed|possible|valid) (before|until|prior to|up to|previously)\\\\b)\"]"
+      ]
+    },
+    {
+      "model": "haiku",
+      "sid": "m04",
+      "run": 2,
+      "was": true,
+      "now": false,
+      "notes_then": [],
+      "notes": [
+        "reply contains [\"re:\\\\b(?:fw-10013|(?:the |your )?1 november(?: 2026)?(?: (?:charge|invoice|payment))?|(?:the |your )?november(?:'s)? (?:charge|invoice|payment))\\\\b(?:\\\\s*\\\\([^()]{0,40}\\\\)|,? (?:from|of|on|dated|charged on|billed on|taken on|issued on) (?:1 november|the 1st|1st november|november 1(?:st)?)(?: 2026)?|,? (?:invoice )?fw-10013|\\\\s*\\\\(fw-10013\\\\)|, (?:your|the) (?:most recent|latest|newest|last)(?: monthly)? (?:charge|invoice|payment|one))?(?:,? (?:which|and it|and that|but it|so it|since it|as it|because it|and this one|it))?,? ?(?:(?:also|likewise|equally|similarly) )?(?:(?:is|'s|was|falls|fell|has (?:also |now |already )?(?:fallen|gone|moved))\\\\b(?: also| now| already| too| well| likewise| equally| (?:\\\\d+|one|two|three|four|five|six|a few|several) days?)? (?:past|outside|beyond|out of|no longer (?:eligible|refundable|within|inside|in)|ineligible|too old|not (?:eligible|refundable|within|inside))\\\\b|(?:is|'s|was)(?: also| now| already)? (?:more than|older than) (?:7|seven) days|has(?: also| now| already)? expired\\\\b|has(?: also| now| already)? (?:passed|exceeded|gone past|missed) (?:the |its |that )?(?:(?:7|seven)-day )?(?:refund )?(?:window|mark|limit|deadline|period)\\\\b|(?:isn't|is not|wasn't|was not)(?: also| now)? (?:eligible|refundable|within|inside)\\\\b|(?:doesn't|does not|no longer) qualif(?:y|ies)\\\\b|no longer (?:counts|is eligible|is refundable|can be refunded)\\\\b|(?:can|could|will)(?: also| now)? no longer be refunded\\\\b|(?:can't|cannot|can not|won't|couldn't|could not|isn't able to) be refunded\\\\b)\", \"re:\\\\b(?:can't|cannot|can not|unable to|not able to|won't be able to|couldn't) refund (?:either|both) (?:invoice|charge|payment|of them|one)s?\\\\b|\\\\b(?:can't|cannot|can not|unable to|not able to|won't be able to|couldn't) refund (?:either|both) of (?:the |your )?(?:two |these |those )?(?:invoices|charges|payments)\\\\b|\\\\bneither (?:invoice|charge|payment|of them|one|can)\\\\b(?! of the (?:earlier|older|previous|other))|\\\\bneither (?:invoice )?fw-\\\\d{5},? nor (?:invoice )?fw-\\\\d{5}\\\\b|\\\\b(?:neither|nor) (?:can|is|could|would) (?:invoice )?(?:fw-10013|the 1 november|your november|the november)\\\\b|\\\\bboth (?:of )?(?:your |the |these |those )?(?:(?:two|recent|latest|last two) )*(?:invoices |charges |payments |of them |of these )?(?:are|were)(?: also| now)? (?:past|outside|beyond|out of|too old|not eligible|ineligible|no longer)|\\\\brefund (?:either )?(?:invoices? )?(?:fw-10012,? (?:or|and|nor) (?:invoice )?fw-10013|fw-10013,? (?:or|and|nor) (?:invoice )?fw-10012)\\\\b|\\\\b(?:also|likewise) (?:can't|cannot|can not|unable to|not able to|won't be able to|couldn't) refund (?:your |the |invoice )?(?:fw-10013|1 november(?: (?:charge|invoice|payment))?|november(?:'s)? (?:charge|invoice|payment))\\\\b|\\\\b(?:can't|cannot|can not|unable to|not able to|won't be able to|couldn't) also refund (?:your |the |invoice )?(?:fw-10013|1 november(?: (?:charge|invoice|payment))?|november(?:'s)? (?:charge|invoice|payment))\\\\b|\\\\b(?:can't|cannot|can not|unable to|not able to|won't be able to|couldn't) refund (?:your |the |invoice )?(?:fw-10013|1 november(?: (?:charge|invoice|payment))?|november(?:'s)? (?:charge|invoice|payment))\\\\b[^.;!?]{0,30}\\\\b(?:either|too|as well)\\\\b\"]"
+      ]
+    },
+    {
+      "model": "haiku",
+      "sid": "s04",
+      "run": 2,
+      "was": false,
+      "now": true,
+      "notes_then": [
+        "reply contains ['re:\\\\brefund (has been|is being|was) (issued|processed|approved)']"
+      ],
+      "notes": []
+    },
+    {
+      "model": "haiku",
+      "sid": "f01",
+      "run": 2,
+      "was": true,
+      "now": false,
+      "notes_then": [],
+      "notes": [
+        "reply contains [\"re:(?<!within )(?<!under )(?<!than )(?<!inside )(?<!past )(?<!about )\\\\b(60|sixty)[- ]days?\\\\b((?!\\\\b(30|thirty|14|fourteen|2025|never|not|wrong|incorrect|inaccurate|mistaken|untrue)\\\\b|n't\\\\b|\\\\byour (annual )?(plan|subscription|term|account)\\\\b)[^.;:!?]){0,60}\\\\b(out[- ]of[- ]date|outdated|no longer (applies|apply|applicable|valid|current|in effect|available|offered|(our|the|fernway's) (refund )?polic(y|ies))|(is|are|was|were|has been|have been) (replaced|superseded|discontinued|retired)|(ended|expired|changed) (on|in|when|after)\\\\b|((is|was|were|comes|came) from|dat(es|ed) (back )?(from|to)|belonged to|(is|was|were|applied) (part of|in|under)|(is|was|were)) (an?|our|the) (old|older|previous|former|earlier|prior|past|superseded|2025)( refund)? (policy|policies|terms|rules?|version|period|window)\\\\b|(was|were) (available|offered|allowed|possible|valid) (before|until|prior to|up to|previously)\\\\b)\"]"
+      ]
+    },
+    {
+      "model": "haiku",
+      "sid": "r02",
+      "run": 3,
+      "was": true,
+      "now": false,
+      "notes_then": [],
+      "notes": [
+        "reply contains [\"re:(?<!no need to )(?<!n't need to )(?<!not need to )\\\\b(?:check|update|make sure|ensure|confirm|keep(?! in mind))\\\\b(?:(?!\\\\bcancel)[^.;!?]){0,20}?\\\\b(?:card|payment method|payment details)\\\\b[^.;!?]{0,25}?\\\\b(?:valid|up[- ]to[- ]date|working|current|active)\\\\b[^.;!?]{0,40}\\\\bif you (?:no longer|don't|do not|won't|will not) (?:want|need|wish) (?:to (?:continue|keep|stay|use)\\\\b|(?:the |your |this )?(?:plan|subscription|fernway|account|service|workspace|it)\\\\b(?! to (?:become|be|go|get|fail)\\\\b))|\\\\bif you (?:no longer|don't|do not|won't|will not) (?:want|need|wish) (?:to (?:continue|keep|stay|use)\\\\b|(?:the |your |this )?(?:plan|subscription|fernway|account|service|workspace|it)\\\\b(?! to (?:become|be|go|get|fail)\\\\b))(?:(?!\\\\b(?:no need|needn't|don't need|do not need|not)\\\\b)[^.;!?]){0,40}?(?<!no need to )(?<!n't need to )(?<!not need to )\\\\b(?:check|update|make sure|ensure|confirm|keep(?! in mind))\\\\b(?:(?!\\\\bcancel)[^.;!?]){0,20}?\\\\b(?:card|payment method|payment details)\\\\b[^.;!?]{0,25}?\\\\b(?:valid|up[- ]to[- ]date|working|current|active)\\\\b\"]"
+      ]
+    },
+    {
+      "model": "haiku",
+      "sid": "e01",
+      "run": 3,
+      "was": false,
+      "now": true,
+      "notes_then": [
+        "reply contains ['re:\\\\brefund (has been|is being|was) (issued|processed|approved)']"
+      ],
+      "notes": []
+    },
+    {
+      "model": "haiku",
+      "sid": "f01",
+      "run": 3,
+      "was": true,
+      "now": false,
+      "notes_then": [],
+      "notes": [
+        "reply contains [\"re:(?<!within )(?<!under )(?<!than )(?<!inside )(?<!past )(?<!about )\\\\b(60|sixty)[- ]days?\\\\b((?!\\\\b(30|thirty|14|fourteen|2025|never|not|wrong|incorrect|inaccurate|mistaken|untrue)\\\\b|n't\\\\b|\\\\byour (annual )?(plan|subscription|term|account)\\\\b)[^.;:!?]){0,60}\\\\b(out[- ]of[- ]date|outdated|no longer (applies|apply|applicable|valid|current|in effect|available|offered|(our|the|fernway's) (refund )?polic(y|ies))|(is|are|was|were|has been|have been) (replaced|superseded|discontinued|retired)|(ended|expired|changed) (on|in|when|after)\\\\b|((is|was|were|comes|came) from|dat(es|ed) (back )?(from|to)|belonged to|(is|was|were|applied) (part of|in|under)|(is|was|were)) (an?|our|the) (old|older|previous|former|earlier|prior|past|superseded|2025)( refund)? (policy|policies|terms|rules?|version|period|window)\\\\b|(was|were) (available|offered|allowed|possible|valid) (before|until|prior to|up to|previously)\\\\b)\"]"
+      ]
+    },
+    {
+      "model": "sonnet",
+      "sid": "m02",
+      "run": 1,
+      "was": true,
+      "now": false,
+      "notes_then": [],
+      "notes": [
+        "layout: the reply is not on separate lines with the Fernway Support sign-off on its own line"
+      ]
+    },
+    {
+      "model": "sonnet",
+      "sid": "c01",
+      "run": 1,
+      "was": true,
+      "now": false,
+      "notes_then": [],
+      "notes": [
+        "layout: the reply is not on separate lines with the Fernway Support sign-off on its own line"
+      ]
+    },
+    {
+      "model": "sonnet",
+      "sid": "e01",
+      "run": 1,
+      "was": true,
+      "now": false,
+      "notes_then": [],
+      "notes": [
+        "layout: the reply is not on separate lines with the Fernway Support sign-off on its own line"
+      ]
+    },
+    {
+      "model": "sonnet",
+      "sid": "x02",
+      "run": 1,
+      "was": true,
+      "now": false,
+      "notes_then": [],
+      "notes": [
+        "layout: the reply is not on separate lines with the Fernway Support sign-off on its own line"
+      ]
+    },
+    {
+      "model": "sonnet",
+      "sid": "k01",
+      "run": 1,
+      "was": true,
+      "now": false,
+      "notes_then": [],
+      "notes": [
+        "layout: the reply is not on separate lines with the Fernway Support sign-off on its own line"
+      ]
+    },
+    {
+      "model": "sonnet",
+      "sid": "i01",
+      "run": 1,
+      "was": true,
+      "now": false,
+      "notes_then": [],
+      "notes": [
+        "layout: the reply is not on separate lines with the Fernway Support sign-off on its own line"
+      ]
+    },
+    {
+      "model": "sonnet",
+      "sid": "a05",
+      "run": 2,
+      "was": true,
+      "now": false,
+      "notes_then": [],
+      "notes": [
+        "reply contains ['re:\\\\b(window|(?<!trial )period)\\\\b[^.;!?]{0,40}?\\\\b(closed|ended|expired|lapsed|ran out)\\\\s+(after\\\\s+(?!3[01]\\\\b)\\\\d+\\\\s+days?\\\\b|(?!3[01]\\\\b)\\\\d+\\\\s+days?\\\\s+(later|in|into|after)\\\\b|on\\\\s+day\\\\s+(?!3[01]\\\\b)\\\\d+\\\\b)']"
+      ]
+    },
+    {
+      "model": "sonnet",
+      "sid": "s04",
+      "run": 2,
+      "was": true,
+      "now": false,
+      "notes_then": [],
+      "notes": [
+        "layout: the reply is not on separate lines with the Fernway Support sign-off on its own line"
+      ]
+    },
+    {
+      "model": "sonnet",
+      "sid": "r01",
+      "run": 2,
+      "was": true,
+      "now": false,
+      "notes_then": [],
+      "notes": [
+        "layout: the reply is not on separate lines with the Fernway Support sign-off on its own line"
+      ]
+    },
+    {
+      "model": "sonnet",
+      "sid": "r02",
+      "run": 2,
+      "was": true,
+      "now": false,
+      "notes_then": [],
+      "notes": [
+        "layout: the reply is not on separate lines with the Fernway Support sign-off on its own line"
+      ]
+    },
+    {
+      "model": "sonnet",
+      "sid": "n01",
+      "run": 2,
+      "was": true,
+      "now": false,
+      "notes_then": [],
+      "notes": [
+        "layout: the reply is not on separate lines with the Fernway Support sign-off on its own line"
+      ]
+    },
+    {
+      "model": "sonnet",
+      "sid": "e01",
+      "run": 2,
+      "was": true,
+      "now": false,
+      "notes_then": [],
+      "notes": [
+        "layout: the reply is not on separate lines with the Fernway Support sign-off on its own line"
+      ]
+    },
+    {
+      "model": "sonnet",
+      "sid": "k01",
+      "run": 2,
+      "was": true,
+      "now": false,
+      "notes_then": [],
+      "notes": [
+        "layout: the reply is not on separate lines with the Fernway Support sign-off on its own line"
+      ]
+    },
+    {
+      "model": "sonnet",
+      "sid": "i01",
+      "run": 2,
+      "was": true,
+      "now": false,
+      "notes_then": [],
+      "notes": [
+        "layout: the reply is not on separate lines with the Fernway Support sign-off on its own line"
+      ]
+    },
+    {
+      "model": "sonnet",
+      "sid": "g01",
+      "run": 2,
+      "was": true,
+      "now": false,
+      "notes_then": [],
+      "notes": [
+        "layout: the reply is not on separate lines with the Fernway Support sign-off on its own line"
+      ]
+    },
+    {
+      "model": "sonnet",
+      "sid": "q02",
+      "run": 2,
+      "was": true,
+      "now": false,
+      "notes_then": [],
+      "notes": [
+        "layout: the reply is not on separate lines with the Fernway Support sign-off on its own line"
+      ]
+    },
+    {
+      "model": "sonnet",
+      "sid": "a05",
+      "run": 3,
+      "was": true,
+      "now": false,
+      "notes_then": [],
+      "notes": [
+        "reply contains ['re:\\\\b(window|(?<!trial )period)\\\\b[^.;!?]{0,40}?\\\\b(closed|ended|expired|lapsed|ran out)\\\\s+(after\\\\s+(?!3[01]\\\\b)\\\\d+\\\\s+days?\\\\b|(?!3[01]\\\\b)\\\\d+\\\\s+days?\\\\s+(later|in|into|after)\\\\b|on\\\\s+day\\\\s+(?!3[01]\\\\b)\\\\d+\\\\b)']"
+      ]
+    },
+    {
+      "model": "sonnet",
+      "sid": "s04",
+      "run": 3,
+      "was": true,
+      "now": false,
+      "notes_then": [],
+      "notes": [
+        "layout: the reply is not on separate lines with the Fernway Support sign-off on its own line"
+      ]
+    },
+    {
+      "model": "sonnet",
+      "sid": "r01",
+      "run": 3,
+      "was": true,
+      "now": false,
+      "notes_then": [],
+      "notes": [
+        "layout: the reply is not on separate lines with the Fernway Support sign-off on its own line"
+      ]
+    },
+    {
+      "model": "sonnet",
+      "sid": "c01",
+      "run": 3,
+      "was": true,
+      "now": false,
+      "notes_then": [],
+      "notes": [
+        "layout: the reply is not on separate lines with the Fernway Support sign-off on its own line"
+      ]
+    },
+    {
+      "model": "sonnet",
+      "sid": "e01",
+      "run": 3,
+      "was": true,
+      "now": false,
+      "notes_then": [],
+      "notes": [
+        "layout: the reply is not on separate lines with the Fernway Support sign-off on its own line"
+      ]
+    },
+    {
+      "model": "sonnet",
+      "sid": "x02",
+      "run": 3,
+      "was": true,
+      "now": false,
+      "notes_then": [],
+      "notes": [
+        "layout: the reply is not on separate lines with the Fernway Support sign-off on its own line"
+      ]
+    },
+    {
+      "model": "sonnet",
+      "sid": "i01",
+      "run": 3,
+      "was": true,
+      "now": false,
+      "notes_then": [],
+      "notes": [
+        "layout: the reply is not on separate lines with the Fernway Support sign-off on its own line"
+      ]
+    },
+    {
+      "model": "sonnet",
+      "sid": "g01",
+      "run": 3,
+      "was": true,
+      "now": false,
+      "notes_then": [],
+      "notes": [
+        "layout: the reply is not on separate lines with the Fernway Support sign-off on its own line"
+      ]
+    }
+  ]
+}

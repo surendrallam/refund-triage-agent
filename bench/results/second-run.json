@@ -1,0 +1,461 @@
+{
+  "config": {
+    "models": [
+      "haiku",
+      "sonnet",
+      "opus"
+    ],
+    "runs": 3,
+    "effort": "low",
+    "scenarios": 30,
+    "scenario_ids": [
+      "m01",
+      "m02",
+      "m03",
+      "m04",
+      "m05",
+      "a01",
+      "a02",
+      "a03",
+      "a04",
+      "a05",
+      "s01",
+      "s02",
+      "s03",
+      "s04",
+      "r01",
+      "r02",
+      "c01",
+      "e01",
+      "x01",
+      "x02",
+      "n01",
+      "k01",
+      "d01",
+      "w01",
+      "o01",
+      "f01",
+      "i01",
+      "g01",
+      "q01",
+      "q02"
+    ],
+    "concurrency": 4,
+    "budget_usd": 12.0
+  },
+  "runs_merged": [
+    "second-run"
+  ],
+  "complete": true,
+  "spent_usd": 2.5186,
+  "models": {
+    "haiku": {
+      "label": "Claude Haiku 5.5",
+      "n": 90,
+      "pass_rate": 0.9667,
+      "decision_accuracy": 1.0,
+      "outcome_accuracy": 1.0,
+      "reply_check_pass_rate": 0.9667,
+      "layout_pass_rate": 1.0,
+      "scenarios": 30,
+      "scenarios_all_runs_passed": 28,
+      "scenarios_varying": [
+        "k01"
+      ],
+      "refused_attempts_per_100": 0.0,
+      "executed_violations": 0,
+      "inconsistent_finishes": 0,
+      "turn_cap_hits": 0,
+      "budget_stops": 0,
+      "errors": 0,
+      "server_fallback_tickets": 0,
+      "model_turns": 353,
+      "server_fallback_armed_turns": 0,
+      "ignored_verified_sender": 0,
+      "tool_calls_per_ticket": 3.99,
+      "usd_per_1000_tickets": 0.573,
+      "first_turn_cache_reads": 90,
+      "usd_per_1000_tickets_cold_cache_estimate": 1.032,
+      "latency_p50_ms": 5388.5,
+      "latency_p95_ms": 7162.6,
+      "by_category": {
+        "annual": 1.0,
+        "identity": 1.0,
+        "monthly": 0.9333,
+        "nothing_to_refund": 1.0,
+        "questions": 1.0,
+        "request": 0.8333,
+        "routed": 1.0,
+        "seats": 1.0,
+        "traps": 1.0
+      },
+      "failures": [
+        "k01",
+        "m04"
+      ]
+    },
+    "sonnet": {
+      "label": "Claude Sonnet 5.5",
+      "n": 90,
+      "pass_rate": 0.7667,
+      "decision_accuracy": 1.0,
+      "outcome_accuracy": 1.0,
+      "reply_check_pass_rate": 1.0,
+      "layout_pass_rate": 0.7667,
+      "scenarios": 30,
+      "scenarios_all_runs_passed": 18,
+      "scenarios_varying": [
+        "k01"
+      ],
+      "refused_attempts_per_100": 0.0,
+      "executed_violations": 0,
+      "inconsistent_finishes": 0,
+      "turn_cap_hits": 0,
+      "budget_stops": 0,
+      "errors": 0,
+      "server_fallback_tickets": 0,
+      "model_turns": 343,
+      "server_fallback_armed_turns": 343,
+      "ignored_verified_sender": 0,
+      "tool_calls_per_ticket": 3.84,
+      "usd_per_1000_tickets": 8.793,
+      "first_turn_cache_reads": 90,
+      "usd_per_1000_tickets_cold_cache_estimate": 18.378,
+      "latency_p50_ms": 7257.5,
+      "latency_p95_ms": 10986.0,
+      "by_category": {
+        "annual": 1.0,
+        "identity": 0.8333,
+        "monthly": 0.9333,
+        "nothing_to_refund": 0.5,
+        "questions": 0.8333,
+        "request": 0.75,
+        "routed": 0.0,
+        "seats": 0.8333,
+        "traps": 0.6667
+      },
+      "failures": [
+        "c01",
+        "e01",
+        "i01",
+        "k01",
+        "m02",
+        "n01",
+        "o01",
+        "q01",
+        "r01",
+        "r02",
+        "s04",
+        "x02"
+      ]
+    },
+    "opus": {
+      "label": "Claude Opus 5.5",
+      "n": 90,
+      "pass_rate": 1.0,
+      "decision_accuracy": 1.0,
+      "outcome_accuracy": 1.0,
+      "reply_check_pass_rate": 1.0,
+      "layout_pass_rate": 1.0,
+      "scenarios": 30,
+      "scenarios_all_runs_passed": 30,
+      "scenarios_varying": [
+        "m05"
+      ],
+      "refused_attempts_per_100": 0.0,
+      "executed_violations": 0,
+      "inconsistent_finishes": 0,
+      "turn_cap_hits": 0,
+      "budget_stops": 0,
+      "errors": 0,
+      "server_fallback_tickets": 0,
+      "model_turns": 347,
+      "server_fallback_armed_turns": 347,
+      "ignored_verified_sender": 0,
+      "tool_calls_per_ticket": 3.93,
+      "usd_per_1000_tickets": 18.619,
+      "first_turn_cache_reads": 89,
+      "usd_per_1000_tickets_cold_cache_estimate": 37.54,
+      "latency_p50_ms": 9703.5,
+      "latency_p95_ms": 14104.1,
+      "by_category": {
+        "annual": 1.0,
+        "identity": 1.0,
+        "monthly": 1.0,
+        "nothing_to_refund": 1.0,
+        "questions": 1.0,
+        "request": 1.0,
+        "routed": 1.0,
+        "seats": 1.0,
+        "traps": 1.0
+      },
+      "failures": []
+    }
+  },
+  "regraded_changes": [
+    {
+      "model": "haiku",
+      "sid": "k01",
+      "run": 1,
+      "was": true,
+      "now": false,
+      "notes_then": [],
+      "notes": [
+        "reply contains [\"re:(?:^|[;!?:]\\\\s?|\\\\.(?!\\\\d)\\\\s?)(?:(?!\\\\b(?:whether|if)\\\\b)(?:[^.;!?:]|\\\\.\\\\d))*?\\\\b(?:we|fernway|policy|it)\\\\b(?:'re)?\\\\s*(?:can't|cannot|can not|(?:are |is )?unable to|aren't able to|isn't able to|(?:are |is )?not able to|won't be able to|will not be able to|won't|will not|don't|do not|doesn't|does not)\\\\s+(?:refund|issue|offer|give|process|provide|approve|do|allow|permit|support|split)\\\\b(?!(?:(?!\\\\b(?:and|but|so)\\\\b)[^.;!?,]|\\\\.\\\\d)*\\\\b(?:automatically|myself|ourselves|on (?:my|our) own|by (?:myself|ourselves)|directly|right away|straight away|right now|at this stage|from here|yet|today|for now|at the moment|(?:through|via|in|from) (?:this|our|the) (?:system|channel|tool|process|inbox)|by email|without (?:a |an |your |their |the )?(?:colleague|person|review|approval|someone)|until (?:a |the )?(?:colleague|person|review)|before (?:a |the )?(?:colleague|person|review))\\\\b)(?:(?!\\\\b(?:answer|decision|reply|update|response|confirmation|outcome|timeline|view|opinion|details|information|date)\\\\b)(?:[^.;!?]|\\\\.\\\\d)){0,40}\\\\b(?:half|part|partial|partially|portion|\\\\$\\\\s?190|190)\\\\b\", 're:(?:^|[;!?:]\\\\s?|\\\\.(?!\\\\d)\\\\s?)(?:(?!\\\\b(?:whether|if)\\\\b)(?:[^.;!?:]|\\\\.\\\\d))*?\\\\b(?:we|fernway|policy|refunds)\\\\b(?!(?:(?!\\\\b(?:and|but|so)\\\\b)[^.;!?,]|\\\\.\\\\d)*\\\\b(?:automatically|myself|ourselves|on (?:my|our) own|by (?:myself|ourselves)|directly|right away|straight away|right now|at this stage|from here|yet|today|for now|at the moment|(?:through|via|in|from) (?:this|our|the) (?:system|channel|tool|process|inbox)|by email|without (?:a |an |your |their |the )?(?:colleague|person|review|approval|someone)|until (?:a |the )?(?:colleague|person|review)|before (?:a |the )?(?:colleague|person|review))\\\\b)(?:[^.;!?]|\\\\.\\\\d){0,40}?(?:\\\\b(?:only|always)\\\\b(?:[^.;!?]|\\\\.\\\\d){0,25}\\\\b(?:full|whole|entire|complete)\\\\b(?!\\\\s+(?:message|email|details|request|name|address|account|history|context|conversation|thread)\\\\b)|\\\\b(?:full|whole|entire)\\\\s+(?:charge|amount|invoice|payment|refund)s?\\\\s+only\\\\b|\\\\bnot\\\\s+(?:for\\\\s+)?(?:a\\\\s+|any\\\\s+)?part\\\\s+of\\\\s+(?:it|one|a\\\\s+charge|the\\\\s+charge|an\\\\s+invoice|the\\\\s+invoice)\\\\b)']"
+      ]
+    },
+    {
+      "model": "haiku",
+      "sid": "m04",
+      "run": 2,
+      "was": true,
+      "now": false,
+      "notes_then": [],
+      "notes": [
+        "reply contains [\"re:(?:^|[;!?:]\\\\s?|\\\\.(?!\\\\d)\\\\s?)(?:(?!\\\\bfw-10012\\\\b|\\\\boctober\\\\b)(?:[^.;!?:]|\\\\.\\\\d))*?\\\\b(?:fw-10013|1 november|november(?:'s)? (?:charge|invoice|payment))\\\\b(?:(?!\\\\bfw-10012\\\\b|\\\\boctober\\\\b)(?:[^.;!?]|\\\\.\\\\d)){0,60}?(?:,|\\\\band\\\\b|\\\\bbut\\\\b|\\\\bso\\\\b|\\\\bwhose\\\\b|\\\\bwhich\\\\b)\\\\s*(?:and\\\\s+|but\\\\s+|so\\\\s+)?(?:that|its|the|this|whose)?\\\\s*(?:(?:7|seven)-day\\\\s+)?(?:refund\\\\s+)?window(?:\\\\s+(?:for|on)\\\\s+(?:it|that(?:\\\\s+(?:one|charge|invoice))?))?(?:'s|\\\\s+(?:has|have|is|was))?\\\\s+(?:(?:also|now|already|too|long|since)\\\\s+){0,2}(?:passed|closed|ended|expired|lapsed|gone|shut|over)\\\\b(?!\\\\s+(?:for|on|by|before)\\\\s+(?:(?!\\\\bfw-10013\\\\b|\\\\b(?:1 )?november\\\\b)(?:[^.;!?,]|\\\\.\\\\d)){0,40}?\\\\b(?:fw-(?!10013)\\\\d{5}|october|older|earlier|previous|prior|other|requested|last month|(?:invoice|charge|payment|one)s? (?:you|that you|in your)|you (?:asked|mentioned|requested|wrote|named|referred))\\\\b)\"]"
+      ]
+    },
+    {
+      "model": "haiku",
+      "sid": "k01",
+      "run": 2,
+      "was": true,
+      "now": false,
+      "notes_then": [],
+      "notes": [
+        "reply contains ['re:(?:^|[;!?:]\\\\s?|\\\\.(?!\\\\d)\\\\s?)(?:(?!\\\\b(?:whether|if)\\\\b)(?:[^.;!?:]|\\\\.\\\\d))*?\\\\b(?:we|fernway|policy|refunds)\\\\b(?!(?:(?!\\\\b(?:and|but|so)\\\\b)[^.;!?,]|\\\\.\\\\d)*\\\\b(?:automatically|myself|ourselves|on (?:my|our) own|by (?:myself|ourselves)|directly|right away|straight away|right now|at this stage|from here|yet|today|for now|at the moment|(?:through|via|in|from) (?:this|our|the) (?:system|channel|tool|process|inbox)|by email|without (?:a |an |your |their |the )?(?:colleague|person|review|approval|someone)|until (?:a |the )?(?:colleague|person|review)|before (?:a |the )?(?:colleague|person|review))\\\\b)(?:[^.;!?]|\\\\.\\\\d){0,40}?(?:\\\\b(?:only|always)\\\\b(?:[^.;!?]|\\\\.\\\\d){0,25}\\\\b(?:full|whole|entire|complete)\\\\b(?!\\\\s+(?:message|email|details|request|name|address|account|history|context|conversation|thread)\\\\b)|\\\\b(?:full|whole|entire)\\\\s+(?:charge|amount|invoice|payment|refund)s?\\\\s+only\\\\b|\\\\bnot\\\\s+(?:for\\\\s+)?(?:a\\\\s+|any\\\\s+)?part\\\\s+of\\\\s+(?:it|one|a\\\\s+charge|the\\\\s+charge|an\\\\s+invoice|the\\\\s+invoice)\\\\b)', \"re:(?:^|[;!?:]\\\\s?|\\\\.(?!\\\\d)\\\\s?)(?:(?!\\\\b(?:whether|if)\\\\b)(?:[^.;!?:]|\\\\.\\\\d))*?(?:\\\\bonly\\\\s+(?:the\\\\s+|a\\\\s+)?(?:full|whole|entire|complete)\\\\b(?:\\\\s+[a-z$0-9][a-z$0-9.,'-]*){0,4}?\\\\s+(?:can|may|could|will)\\\\s+be\\\\s+refunded\\\\b|\\\\b(?:can|may|could|will)\\\\s+only\\\\s+be\\\\s+(?:refunded|made|issued|given|processed)\\\\s+(?:in\\\\s+full|as\\\\s+a\\\\s+whole|whole|for\\\\s+(?:the\\\\s+|a\\\\s+)?(?:full|whole|entire))\\\\b|\\\\b(?:partial|half|part)\\\\b(?:\\\\s+[a-z$0-9][a-z$0-9.,'-]*){0,4}?\\\\s+(?:can't|cannot|can\\\\s+not|won't|will\\\\s+not)\\\\s+be\\\\s+(?:refunded|issued|given|offered|processed)\\\\b|\\\\b(?:it|that)(?:'s|\\\\s+is)?\\\\s*(?:not|n't)\\\\s+possible\\\\s+to\\\\s+(?:refund|issue|give|process|offer)\\\\s+(?:only\\\\s+)?(?:half|part|a\\\\s+portion|a\\\\s+partial)\\\\b|\\\\brefund(?:ing|s)?\\\\s+(?:only\\\\s+)?(?:half|part|a\\\\s+portion)\\\\b(?:\\\\s+[a-z$0-9][a-z$0-9.,'-]*){0,4}?\\\\s+(?:isn't|is\\\\s+not|aren't|are\\\\s+not)\\\\s+(?:possible|allowed|available|an\\\\s+option|supported)\\\\b|\\\\bonly\\\\s+(?:full|whole|complete)\\\\s+refunds?\\\\s+(?:are|is)\\\\s+(?:possible|available|allowed|offered|given|issued)\\\\b|\\\\bin\\\\s+full\\\\s+or\\\\s+not\\\\s+at\\\\s+all\\\\b|\\\\b(?:can't|cannot|can\\\\s+not|won't|will\\\\s+not)\\\\s+be\\\\s+(?:partly\\\\s+refunded|refunded\\\\s+partly)\\\\b|\\\\bpartial\\\\s+refunds?\\\\b(?:[^.;!?]|\\\\.\\\\d){0,30}\\\\b(?:aren't|are\\\\s+not|isn't|is\\\\s+not)\\\\s+(?:supported|something\\\\s+we\\\\s+(?:do|offer))\\\\b|\\\\bno\\\\s+(?:option|way)\\\\s+to\\\\s+refund\\\\s+(?:only\\\\s+)?(?:half|part|a\\\\s+portion)\\\\b|\\\\b(?:full|whole|entire)\\\\b(?:[^.;!?]|\\\\.\\\\d){0,40}\\\\bnot\\\\s+(?:a\\\\s+|any\\\\s+)?(?:partial(?:\\\\s+(?:amount|refund))?|half|in\\\\s+part|part(?:\\\\s+of\\\\s+it)?)\\\\b|\\\\b(?:we|fernway)\\\\b(?:'re|\\\\s+are)?\\\\s*(?:can't|cannot|can\\\\s+not|(?:are\\\\s+)?unable\\\\s+to|(?:are\\\\s+)?not\\\\s+able\\\\s+to|don't|do\\\\s+not|won't|will\\\\s+not)\\\\s+split\\\\s+(?:an?|the|this|your|one)\\\\s+(?:invoice|charge|payment|refund)s?\\\\b)(?!(?:(?!\\\\b(?:and|but|so)\\\\b)[^.;!?,]|\\\\.\\\\d)*\\\\b(?:automatically|myself|ourselves|on (?:my|our) own|by (?:myself|ourselves)|directly|right away|straight away|right now|at this stage|from here|yet|today|for now|at the moment|(?:through|via|in|from) (?:this|our|the) (?:system|channel|tool|process|inbox)|by email|without (?:a |an |your |their |the )?(?:colleague|person|review|approval|someone)|until (?:a |the )?(?:colleague|person|review)|before (?:a |the )?(?:colleague|person|review))\\\\b)\"]"
+      ]
+    },
+    {
+      "model": "sonnet",
+      "sid": "m02",
+      "run": 1,
+      "was": true,
+      "now": false,
+      "notes_then": [],
+      "notes": [
+        "layout: the reply is not on separate lines with the Fernway Support sign-off on its own line"
+      ]
+    },
+    {
+      "model": "sonnet",
+      "sid": "s04",
+      "run": 1,
+      "was": true,
+      "now": false,
+      "notes_then": [],
+      "notes": [
+        "layout: the reply is not on separate lines with the Fernway Support sign-off on its own line"
+      ]
+    },
+    {
+      "model": "sonnet",
+      "sid": "r02",
+      "run": 1,
+      "was": true,
+      "now": false,
+      "notes_then": [],
+      "notes": [
+        "layout: the reply is not on separate lines with the Fernway Support sign-off on its own line"
+      ]
+    },
+    {
+      "model": "sonnet",
+      "sid": "c01",
+      "run": 1,
+      "was": true,
+      "now": false,
+      "notes_then": [],
+      "notes": [
+        "layout: the reply is not on separate lines with the Fernway Support sign-off on its own line"
+      ]
+    },
+    {
+      "model": "sonnet",
+      "sid": "x02",
+      "run": 1,
+      "was": true,
+      "now": false,
+      "notes_then": [],
+      "notes": [
+        "layout: the reply is not on separate lines with the Fernway Support sign-off on its own line"
+      ]
+    },
+    {
+      "model": "sonnet",
+      "sid": "e01",
+      "run": 1,
+      "was": true,
+      "now": false,
+      "notes_then": [],
+      "notes": [
+        "layout: the reply is not on separate lines with the Fernway Support sign-off on its own line"
+      ]
+    },
+    {
+      "model": "sonnet",
+      "sid": "k01",
+      "run": 1,
+      "was": true,
+      "now": false,
+      "notes_then": [],
+      "notes": [
+        "layout: the reply is not on separate lines with the Fernway Support sign-off on its own line"
+      ]
+    },
+    {
+      "model": "sonnet",
+      "sid": "i01",
+      "run": 1,
+      "was": true,
+      "now": false,
+      "notes_then": [],
+      "notes": [
+        "layout: the reply is not on separate lines with the Fernway Support sign-off on its own line"
+      ]
+    },
+    {
+      "model": "sonnet",
+      "sid": "s04",
+      "run": 2,
+      "was": true,
+      "now": false,
+      "notes_then": [],
+      "notes": [
+        "layout: the reply is not on separate lines with the Fernway Support sign-off on its own line"
+      ]
+    },
+    {
+      "model": "sonnet",
+      "sid": "r01",
+      "run": 2,
+      "was": true,
+      "now": false,
+      "notes_then": [],
+      "notes": [
+        "layout: the reply is not on separate lines with the Fernway Support sign-off on its own line"
+      ]
+    },
+    {
+      "model": "sonnet",
+      "sid": "e01",
+      "run": 2,
+      "was": true,
+      "now": false,
+      "notes_then": [],
+      "notes": [
+        "layout: the reply is not on separate lines with the Fernway Support sign-off on its own line"
+      ]
+    },
+    {
+      "model": "sonnet",
+      "sid": "c01",
+      "run": 2,
+      "was": true,
+      "now": false,
+      "notes_then": [],
+      "notes": [
+        "layout: the reply is not on separate lines with the Fernway Support sign-off on its own line"
+      ]
+    },
+    {
+      "model": "sonnet",
+      "sid": "n01",
+      "run": 2,
+      "was": true,
+      "now": false,
+      "notes_then": [],
+      "notes": [
+        "layout: the reply is not on separate lines with the Fernway Support sign-off on its own line"
+      ]
+    },
+    {
+      "model": "sonnet",
+      "sid": "o01",
+      "run": 2,
+      "was": true,
+      "now": false,
+      "notes_then": [],
+      "notes": [
+        "layout: the reply is not on separate lines with the Fernway Support sign-off on its own line"
+      ]
+    },
+    {
+      "model": "sonnet",
+      "sid": "i01",
+      "run": 2,
+      "was": true,
+      "now": false,
+      "notes_then": [],
+      "notes": [
+        "layout: the reply is not on separate lines with the Fernway Support sign-off on its own line"
+      ]
+    },
+    {
+      "model": "sonnet",
+      "sid": "q01",
+      "run": 2,
+      "was": true,
+      "now": false,
+      "notes_then": [],
+      "notes": [
+        "layout: the reply is not on separate lines with the Fernway Support sign-off on its own line"
+      ]
+    },
+    {
+      "model": "sonnet",
+      "sid": "r01",
+      "run": 3,
+      "was": true,
+      "now": false,
+      "notes_then": [],
+      "notes": [
+        "layout: the reply is not on separate lines with the Fernway Support sign-off on its own line"
+      ]
+    },
+    {
+      "model": "sonnet",
+      "sid": "c01",
+      "run": 3,
+      "was": true,
+      "now": false,
+      "notes_then": [],
+      "notes": [
+        "layout: the reply is not on separate lines with the Fernway Support sign-off on its own line"
+      ]
+    },
+    {
+      "model": "sonnet",
+      "sid": "e01",
+      "run": 3,
+      "was": true,
+      "now": false,
+      "notes_then": [],
+      "notes": [
+        "layout: the reply is not on separate lines with the Fernway Support sign-off on its own line"
+      ]
+    },
+    {
+      "model": "sonnet",
+      "sid": "k01",
+      "run": 3,
+      "was": true,
+      "now": false,
+      "notes_then": [],
+      "notes": [
+        "layout: the reply is not on separate lines with the Fernway Support sign-off on its own line"
+      ]
+    },
+    {
+      "model": "sonnet",
+      "sid": "i01",
+      "run": 3,
+      "was": true,
+      "now": false,
+      "notes_then": [],
+      "notes": [
+        "layout: the reply is not on separate lines with the Fernway Support sign-off on its own line"
+      ]
+    }
+  ]
+}

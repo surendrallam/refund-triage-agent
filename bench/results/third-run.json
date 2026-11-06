@@ -1,0 +1,197 @@
+{
+  "config": {
+    "models": [
+      "haiku",
+      "sonnet",
+      "opus"
+    ],
+    "runs": 3,
+    "effort": "low",
+    "scenarios": 30,
+    "scenario_ids": [
+      "m01",
+      "m02",
+      "m03",
+      "m04",
+      "m05",
+      "a01",
+      "a02",
+      "a03",
+      "a04",
+      "a05",
+      "s01",
+      "s02",
+      "s03",
+      "s04",
+      "r01",
+      "r02",
+      "c01",
+      "e01",
+      "x01",
+      "x02",
+      "n01",
+      "k01",
+      "d01",
+      "w01",
+      "o01",
+      "f01",
+      "i01",
+      "g01",
+      "q01",
+      "q02"
+    ],
+    "concurrency": 4,
+    "budget_usd": 7.5
+  },
+  "runs_merged": [
+    "third-run"
+  ],
+  "complete": true,
+  "spent_usd": 2.5594,
+  "models": {
+    "haiku": {
+      "label": "Claude Haiku 5.5",
+      "n": 90,
+      "pass_rate": 1.0,
+      "decision_accuracy": 1.0,
+      "outcome_accuracy": 1.0,
+      "reply_check_pass_rate": 1.0,
+      "layout_pass_rate": 1.0,
+      "scenarios": 30,
+      "scenarios_all_runs_passed": 30,
+      "scenarios_varying": [
+        "a05",
+        "f01",
+        "k01",
+        "q01"
+      ],
+      "refused_attempts_per_100": 0.0,
+      "executed_violations": 0,
+      "inconsistent_finishes": 0,
+      "turn_cap_hits": 0,
+      "budget_stops": 0,
+      "errors": 0,
+      "server_fallback_tickets": 0,
+      "model_turns": 355,
+      "server_fallback_armed_turns": 0,
+      "ignored_verified_sender": 0,
+      "tool_calls_per_ticket": 4.03,
+      "usd_per_1000_tickets": 0.604,
+      "first_turn_cache_reads": 86,
+      "usd_per_1000_tickets_cold_cache_estimate": 1.058,
+      "latency_p50_ms": 5561.0,
+      "latency_p95_ms": 8255.0,
+      "by_category": {
+        "annual": 1.0,
+        "identity": 1.0,
+        "monthly": 1.0,
+        "nothing_to_refund": 1.0,
+        "questions": 1.0,
+        "request": 1.0,
+        "routed": 1.0,
+        "seats": 1.0,
+        "traps": 1.0
+      },
+      "failures": []
+    },
+    "sonnet": {
+      "label": "Claude Sonnet 5.5",
+      "n": 90,
+      "pass_rate": 1.0,
+      "decision_accuracy": 1.0,
+      "outcome_accuracy": 1.0,
+      "reply_check_pass_rate": 1.0,
+      "layout_pass_rate": 1.0,
+      "scenarios": 30,
+      "scenarios_all_runs_passed": 30,
+      "scenarios_varying": [
+        "d01"
+      ],
+      "refused_attempts_per_100": 0.0,
+      "executed_violations": 0,
+      "inconsistent_finishes": 0,
+      "turn_cap_hits": 0,
+      "budget_stops": 0,
+      "errors": 0,
+      "server_fallback_tickets": 0,
+      "model_turns": 347,
+      "server_fallback_armed_turns": 347,
+      "ignored_verified_sender": 0,
+      "tool_calls_per_ticket": 3.89,
+      "usd_per_1000_tickets": 9.216,
+      "first_turn_cache_reads": 88,
+      "usd_per_1000_tickets_cold_cache_estimate": 18.897,
+      "latency_p50_ms": 7247.5,
+      "latency_p95_ms": 10207.4,
+      "by_category": {
+        "annual": 1.0,
+        "identity": 1.0,
+        "monthly": 1.0,
+        "nothing_to_refund": 1.0,
+        "questions": 1.0,
+        "request": 1.0,
+        "routed": 1.0,
+        "seats": 1.0,
+        "traps": 1.0
+      },
+      "failures": []
+    },
+    "opus": {
+      "label": "Claude Opus 5.5",
+      "n": 90,
+      "pass_rate": 0.9889,
+      "decision_accuracy": 1.0,
+      "outcome_accuracy": 1.0,
+      "reply_check_pass_rate": 0.9889,
+      "layout_pass_rate": 1.0,
+      "scenarios": 30,
+      "scenarios_all_runs_passed": 29,
+      "scenarios_varying": [
+        "s03"
+      ],
+      "refused_attempts_per_100": 0.0,
+      "executed_violations": 0,
+      "inconsistent_finishes": 0,
+      "turn_cap_hits": 0,
+      "budget_stops": 0,
+      "errors": 0,
+      "server_fallback_tickets": 0,
+      "model_turns": 347,
+      "server_fallback_armed_turns": 347,
+      "ignored_verified_sender": 0,
+      "tool_calls_per_ticket": 3.93,
+      "usd_per_1000_tickets": 18.618,
+      "first_turn_cache_reads": 89,
+      "usd_per_1000_tickets_cold_cache_estimate": 38.194,
+      "latency_p50_ms": 8545.5,
+      "latency_p95_ms": 11666.0,
+      "by_category": {
+        "annual": 1.0,
+        "identity": 1.0,
+        "monthly": 1.0,
+        "nothing_to_refund": 1.0,
+        "questions": 0.8333,
+        "request": 1.0,
+        "routed": 1.0,
+        "seats": 1.0,
+        "traps": 1.0
+      },
+      "failures": [
+        "q02"
+      ]
+    }
+  },
+  "regraded_changes": [
+    {
+      "model": "opus",
+      "sid": "q02",
+      "run": 2,
+      "was": true,
+      "now": false,
+      "notes_then": [],
+      "notes": [
+        "reply contains ['re:\\\\b(?:if|once|when|after|until) you approve\\\\b']"
+      ]
+    }
+  ]
+}
